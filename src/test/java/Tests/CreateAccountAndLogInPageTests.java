@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.*;
+import util.DataProviders;
 
 public class CreateAccountAndLogInPageTests extends TestBase {
 
@@ -30,23 +31,26 @@ public class CreateAccountAndLogInPageTests extends TestBase {
 
 
 
-    @Test
-    public void createNewAccount () {
+    @Test  (dataProviderClass = DataProviders.class,dataProvider ="randomUsers" )
+    public void createNewAccount (String email,String password) {
 
         homePage.waitUntilPageLoad()
                 .pressCreateAccountButton();
-        createAccount.waitUntilPageLoad();
-        createAccount.enterValueToFieldEmailRandom();
-        createAccount.passportFieldPressAndSendKeys("555555")
-        .repPassportFieldPressAndSendKeys("555555")
-        .registrationButtonWaitAndClick();
-        profilePage.waitUntilPageLoad();
-        Assert.assertEquals(profilePage.getHeader(),"Registration");
-        profilePage.menuButtonClick();
+        createAccount.waitUntilPageLoad()
+                .emailFieldPressAndSendKeys(email)
+                .passportFieldPressAndSendKeys(password)
+                .repPassportFieldPressAndSendKeys(password)
+                .registrationButtonWaitAndClick();
+        profilePage.waitUntilPageLoad()
+                .menuButtonClick();
+
         menuPage.waitUntilPageLoad()
-        .pressLogOutButton();
+                .pressLogOutButton();
         homePage.waitUntilPageLoad();
-        Assert.assertEquals(homePage.getHeader(),"Shabbat in the family circle");
+        Assert.assertEquals(homePage.getHeader(), "Shabbat in the family circle");
+        System.out.println("email: " + email + "  password: " + password);
+
+    }
 
          //String email = latinDigitString(8) + "@gmail.com";
         //waitUntilElementIsLoaded(driver,By.xpath("//span[contains(text(),'Create Account')]"),45);
@@ -74,35 +78,36 @@ public class CreateAccountAndLogInPageTests extends TestBase {
         //WebElement goToEventsButton = driver.findElement(By.xpath("//span[contains(text(),'Go to Event list')]"));
         //Assert.assertTrue(goToEventsButton.getText().equals("Go to Event list"));
 
-    }
-    @Test
 
-    public void createNewAccountAndLogin (){
+    @Test (dataProviderClass = DataProviders.class,dataProvider ="randomUsers" )
+
+    public void createNewAccountAndLogin (String email,String password){
         homePage.waitUntilPageLoad()
                 .pressCreateAccountButton();
-        createAccount.waitUntilPageLoad();
-       String email = createAccount.enterValueToFieldEmailRandom();
-        createAccount.passportFieldPressAndSendKeys("555555")
-        .repPassportFieldPressAndSendKeys("555555")
-        .registrationButtonWaitAndClick();
-        profilePage.waitUntilPageLoad();
+        createAccount.waitUntilPageLoad()
+                .emailFieldPressAndSendKeys(email)
+                .passportFieldPressAndSendKeys(password)
+                .repPassportFieldPressAndSendKeys(password)
+                .registrationButtonWaitAndClick();
+        profilePage.waitUntilPageLoad()
+                .menuButtonClick();
         Assert.assertEquals(profilePage.getHeader(),"Registration");
-        profilePage.menuButtonClick();
+
         menuPage.waitUntilPageLoad()
-        .pressLogOutButton();
+                .pressLogOutButton();
         homePage.waitUntilPageLoad();
         Assert.assertEquals(homePage.getHeader(),"Shabbat in the family circle");// cравниваем заголовки на странице
 
         homePage.waitUntilPageLoad()
-        .pressLoginButton();
+               .pressLoginButton();
         loginPage.waitUntilPageLog_InLoaded()
         .emailFieldPressAndSendKeys(email)
-        .passwordFieldPressAndSendKeys("555555")
+        .passwordFieldPressAndSendKeys(password)
         .waitUntilPageLog_InLoaded()
         .log_InPressButton();
         profilePage.waitUntilPageLoad();
         Assert.assertEquals(profilePage.getHeader(),"Registration");
-
+        System.out.println("email: " + email + "  password: " + password);
 
 
         //String email2 = latinDigitString(8) + "@gmail.com";

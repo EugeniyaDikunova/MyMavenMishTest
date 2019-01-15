@@ -5,10 +5,13 @@ package Tests;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.EventsAuthPageHelper;
 import pages.HomePageHelper;
 import pages.LoginPageHelper;
+import pages.MenuPageHelper;
+import util.DataProviders;
 
 public class LoginPageTest extends TestBase
 
@@ -16,29 +19,37 @@ public class LoginPageTest extends TestBase
     HomePageHelper homePage;
     LoginPageHelper loginPage;
     EventsAuthPageHelper eventsAuthPage;
+    MenuPageHelper menuPage;
 
     @BeforeMethod
     public void initPage (){
         homePage = PageFactory.initElements(driver, HomePageHelper.class);
         loginPage = PageFactory.initElements(driver, LoginPageHelper.class);
         eventsAuthPage = PageFactory.initElements(driver, EventsAuthPageHelper.class);
+        menuPage = PageFactory.initElements(driver, MenuPageHelper.class);
     }
 
 
-    @Test
-    public void LoginPositive () {
+    @Test (dataProviderClass = DataProviders.class,dataProvider ="loginPositive" )
+    public void LoginPositive (String email,String password) {
 
            homePage.waitUntilPageLoad()
                     .pressLoginButton();
-           loginPage.waitUntilPageLog_InLoaded()
-           .emailFieldPressAndSendKeys("jmenka@gmail.com")
-           .passwordFieldPressAndSendKeys("221263")
+           loginPage.emailFieldPressAndSendKeys(email)
+           .passwordFieldPressAndSendKeys(password)
            .waitUntilPageLog_InLoaded()
            .log_InPressButton();
            eventsAuthPage.waitUntilPageMenuIconLoaded();
 
         Assert.assertEquals("Menu",eventsAuthPage.getTooltipIconMenu());
         Assert.assertEquals("Find event",eventsAuthPage.getHeader());
+        //driver.quit();
+     eventsAuthPage.menuButtonClick();
+     menuPage.waitUntilPageLoad()
+             .pressLogOutButton();
+     homePage.waitUntilPageLoad();
+        Assert.assertEquals(homePage.getHeader(),"Shabbat in the family circle");
+
 
 
         //waitUntilElementIsLoaded(driver,By.xpath("//span[contains(text(),'Login')]"),45);
@@ -60,21 +71,29 @@ public class LoginPageTest extends TestBase
 
         }
 
-    @Test
-    public void LoginNegative (){
+    @Test  (dataProviderClass = DataProviders.class,dataProvider ="loginNegative" )
+    public void LoginNegative (String email,String password) {
 
         homePage.waitUntilPageLoad()
-        .pressLoginButton();
-
-
-        loginPage.waitUntilPageLog_InLoaded()
-        .emailFieldPressAndSendKeys("jmenkaa@gmail.com")
-        .passwordFieldPressAndSendKeys("221263")
-        .waitUntilPageLog_InLoaded()
-        .log_InPressButton();
+                .pressLoginButton();
+        loginPage.emailFieldPressAndSendKeys(email)
+                .passwordFieldPressAndSendKeys(password)
+                .waitUntilPageLog_InLoaded()
+                .log_InPressButton();
         loginPage.wrongAuthorization();
-        Assert.assertEquals("Wrong authorization, login or password",loginPage.wrongAuthorization());
+        Assert.assertEquals("Wrong authorization, login or password", loginPage.wrongAuthorization());
+        loginPage.waitUntilPageLog_InLoaded()
+                .cancelPushButton();
+       // loginPage.notValidEmail();
+        //Assert.assertEquals("Not a valid email",loginPage.notValidEmail());
+      driver.quit();
 
+
+
+
+
+
+    }
 
        // waitUntilElementIsLoaded(driver,By.xpath("//span[contains(text(),'Login')]"),45);
     //WebElement login = driver.findElement(By.xpath("//span[contains(text(),'Login')]"));
@@ -98,7 +117,7 @@ public class LoginPageTest extends TestBase
         //WebElement alertText = driver.findElement(By.xpath("//div[@class='alert alert-danger ng-star-inserted']"));
         //Assert.assertTrue(alertText.getText().equals("Wrong authorization, login or password"));
 
-    }
+
 
     }
 

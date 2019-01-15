@@ -35,4 +35,10 @@ public class EventsAuthPageHelper extends PageBase {
                 .xpath("//h1[@class='gorisontal-center']"));
         return titlePage.getText();
     }
+
+    public EventsAuthPageHelper menuButtonClick() {
+
+        menuButton.click();
+        return this;
+    }
 }

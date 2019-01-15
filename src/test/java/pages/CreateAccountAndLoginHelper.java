@@ -33,9 +33,9 @@ public class CreateAccountAndLoginHelper  extends PageBase {
     }
 
     public String enterValueToFieldEmailRandom() {
-        String email = latinDigitString(10)+"@gmail.com";
-        setValueToField(email_field,email);
-        return email;
+        String email1 = latinDigitString(10)+"@gmail.com";
+        setValueToField(email_field,email1);
+        return email1;
     }
 
     public CreateAccountAndLoginHelper emailFieldPressAndSendKeys (String value){

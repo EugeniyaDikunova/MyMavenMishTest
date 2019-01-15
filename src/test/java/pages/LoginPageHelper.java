@@ -21,6 +21,8 @@ public class LoginPageHelper extends PageBase {
 
     @FindBy(xpath = "//div[@class='alert alert-danger ng-star-inserted']")
     WebElement alertText;
+    @FindBy(xpath = "//mat-error[@id='mat-error-6']")
+    WebElement notValidEmail;
 
     public LoginPageHelper (WebDriver driver){
 
@@ -62,4 +64,9 @@ public LoginPageHelper cancelPushButton (){
         //WebElement alertText = driver.findElement(By.xpath("//div[@class='alert alert-danger ng-star-inserted']"));
         return  alertText.getText();
     }
+    public String notValidEmail(){
+        waitUntilElementIsLoaded (driver, notValidEmail,20);
+                return notValidEmail.getText();
+    }
+
 }
