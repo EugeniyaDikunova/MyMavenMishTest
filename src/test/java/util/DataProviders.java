@@ -1,6 +1,7 @@
 package util;
 
 import org.testng.annotations.DataProvider;
+import pages.PageBase;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -65,7 +66,7 @@ public class DataProviders {
         return "pass" + (new Random()).nextInt();
     }
 
-    private Object generateRandomName() {
-        return "demo" + (new Random()).nextInt()+"@gmail.com";
-    }
+    //private Object generateRandomName() { return "demo" + (new Random()).nextInt()+"@gmail.com"; }
+
+    private Object generateRandomName() { return PageBase.latinDigitString(10)+"@gmail.com"; }
 }
