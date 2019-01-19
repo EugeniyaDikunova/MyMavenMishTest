@@ -39,6 +39,19 @@ public class DataProviders {
         return userData.iterator();
     }
 
+    @DataProvider
+    public static Iterator<Object[]> notValidEmail() throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class.getResourceAsStream("/NotValidEmail.data")));//считывает значения email & password
+        List<Object[]> userData = new ArrayList<>();//массив email & password
+
+        for(String line = in.readLine(); line != null; line = in.readLine()) {
+            userData.add(line.split(";")); //разделитель email & password
+        }
+
+        in.close();
+        return userData.iterator();
+    }
+
 
 
     @DataProvider

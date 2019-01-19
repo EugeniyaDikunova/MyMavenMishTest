@@ -84,14 +84,23 @@ public class LoginPageTest extends TestBase
         Assert.assertEquals("Wrong authorization, login or password", loginPage.wrongAuthorization());
         loginPage.waitUntilPageLog_InLoaded()
                 .cancelPushButton();
-       // loginPage.notValidEmail();
-        //Assert.assertEquals("Not a valid email",loginPage.notValidEmail());
+
       driver.quit();
+    }
 
+    @Test (dataProviderClass = DataProviders.class,dataProvider = "notValidEmail")
+    public void notValidemail (String email,String password){
+        homePage.waitUntilPageLoad()
+                .pressLoginButton();
+        loginPage.emailFieldPressAndSendKeys(email)
+                .passwordFieldPressAndSendKeys(password)
+                .waitUntilPageLog_InLoaded();
 
-
-
-
+        loginPage.notValidEmail();
+        Assert.assertEquals("Not a valid email",loginPage.notValidEmail());
+        loginPage.waitUntilPageLog_InLoaded()
+                .cancelPushButton();
+        driver.quit();
 
     }
 
