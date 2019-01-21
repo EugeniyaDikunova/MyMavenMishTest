@@ -13,6 +13,10 @@ import pages.LoginPageHelper;
 import pages.MenuPageHelper;
 import util.DataProviders;
 
+import org.apache.log4j.Logger;
+import util.LogLog4j;
+
+
 public class LoginPageTest extends TestBase
 
 {
@@ -21,8 +25,12 @@ public class LoginPageTest extends TestBase
     EventsAuthPageHelper eventsAuthPage;
     MenuPageHelper menuPage;
 
+
+    private static Logger Log = Logger.getLogger(LogLog4j.class.getName());
+
     @BeforeMethod
     public void initPage (){
+
         homePage = PageFactory.initElements(driver, HomePageHelper.class);
         loginPage = PageFactory.initElements(driver, LoginPageHelper.class);
         eventsAuthPage = PageFactory.initElements(driver, EventsAuthPageHelper.class);
@@ -33,6 +41,10 @@ public class LoginPageTest extends TestBase
     @Test (dataProviderClass = DataProviders.class,dataProvider ="loginPositive" )
     public void LoginPositive (String email,String password) {
 
+        Log.info("-------- Test LoginPositive was started--------");
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Test login positive:homepage was opened");
            homePage.waitUntilPageLoad()
                     .pressLoginButton();
            loginPage.emailFieldPressAndSendKeys(email)
@@ -40,14 +52,16 @@ public class LoginPageTest extends TestBase
            .waitUntilPageLog_InLoaded()
            .log_InPressButton();
            eventsAuthPage.waitUntilPageMenuIconLoaded();
-
+        Log.info("Test LoginPositive - Assert: verify that name"  + "'Menu' is equal to real name'" + eventsAuthPage.getTooltipIconMenu() + "'" );
         Assert.assertEquals("Menu",eventsAuthPage.getTooltipIconMenu());
+        Log.info("Test LoginPositive- Assert: verify that name " + "'Find event' is equal to real name'" + eventsAuthPage.getHeader() + "'" );
         Assert.assertEquals("Find event",eventsAuthPage.getHeader());
-        //driver.quit();
+
      eventsAuthPage.menuButtonClick();
      menuPage.waitUntilPageLoad()
              .pressLogOutButton();
      homePage.waitUntilPageLoad();
+     Log.info("Test LoginPositive- Assert: verify that name " + "'Shabbat in the family circle' is equal to real name'" + homePage.getHeader() + "'");
         Assert.assertEquals(homePage.getHeader(),"Shabbat in the family circle");
 
 
@@ -73,23 +87,30 @@ public class LoginPageTest extends TestBase
 
     @Test  (dataProviderClass = DataProviders.class,dataProvider ="loginNegative" )
     public void LoginNegative (String email,String password) {
-
+        Log.info("-------- Test LoginNegative was started--------");
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Test login negative:homepage was opened");
         homePage.waitUntilPageLoad()
                 .pressLoginButton();
         loginPage.emailFieldPressAndSendKeys(email)
                 .passwordFieldPressAndSendKeys(password)
                 .waitUntilPageLog_InLoaded()
                 .log_InPressButton();
-        loginPage.wrongAuthorization();
+        Log.info("Test LoginNegative- Assert: verify that name " + "'Wrong authorization, login or password' is equal to real name'" + loginPage.wrongAuthorization() + "'");
         Assert.assertEquals("Wrong authorization, login or password", loginPage.wrongAuthorization());
-        loginPage.waitUntilPageLog_InLoaded()
-                .cancelPushButton();
+        loginPage.cancelPushButton()
+                .waitUntilWindowIsClosed();
 
-      driver.quit();
+      //driver.quit();
     }
 
     @Test (dataProviderClass = DataProviders.class,dataProvider = "notValidEmail")
-    public void notValidemail (String email,String password){
+    public void notValidEmail (String email,String password){
+        Log.info("-------- Test notValidEmail was started--------");
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Test login notValidEmail :homepage was opened");
         homePage.waitUntilPageLoad()
                 .pressLoginButton();
         loginPage.emailFieldPressAndSendKeys(email)
@@ -97,10 +118,10 @@ public class LoginPageTest extends TestBase
                 .waitUntilPageLog_InLoaded();
 
         loginPage.notValidEmail();
+        Log.info("Test notValidEmail - Assert: verify that name"  + "'Not a valid email' is equal to real name'" + loginPage.notValidEmail() + "'" );
         Assert.assertEquals("Not a valid email",loginPage.notValidEmail());
-        loginPage.waitUntilPageLog_InLoaded()
-                .cancelPushButton();
-        driver.quit();
+        loginPage.cancelPushButton()
+                .waitUntilWindowIsClosed();
 
     }
 
@@ -126,7 +147,25 @@ public class LoginPageTest extends TestBase
         //WebElement alertText = driver.findElement(By.xpath("//div[@class='alert alert-danger ng-star-inserted']"));
         //Assert.assertTrue(alertText.getText().equals("Wrong authorization, login or password"));
 
+    @Test (dataProviderClass = DataProviders.class,dataProvider = "notValidPassword")
+    public void notValidPassword (String email,String password){
+        Log.info("-------- Test notValidPassword was started--------");
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Test login notValidPassword :homepage was opened");
+        homePage.waitUntilPageLoad()
+                .pressLoginButton();
+        loginPage.emailFieldPressAndSendKeys(email)
+                .passwordFieldPressAndSendKeys(password)
+                .waitUntilPageLog_InLoaded();
 
+        loginPage.notValidEmail();
+        Log.info("Test notValidPassword - Assert: verify that name"  + "'Enter 6 characters' is equal to real name'" + loginPage.notValidPassword() + "'" );
+        Assert.assertEquals("Enter 6 characters",loginPage.notValidPassword());
+        loginPage.cancelPushButton()
+                .waitUntilWindowIsClosed();
+
+    }
 
     }
 

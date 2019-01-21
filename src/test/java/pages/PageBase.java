@@ -1,8 +1,7 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -71,5 +70,33 @@ public abstract class PageBase {
     return str;
   }
 
+  public static ExpectedCondition<Boolean> absenceOfElement(
+          final WebElement element) {
+    return new ExpectedCondition<Boolean>() {
+
+      @Override
+      public Boolean apply(WebDriver driver) {
+        try {
+          element.getTagName();
+          return false;
+        } catch (NoSuchElementException e) {
+          return true;
+        } catch (StaleElementReferenceException e) {
+          return true;
+        }
+      }
+    };
+  }
+
+  public void waitUntilElementIsAbsent(WebDriver driver,
+                                       WebElement element, int time)
+  {
+    try {
+      new WebDriverWait(driver, time).until(absenceOfElement(element));
+    }
+    catch(Exception e){
+      e.printStackTrace();
+    }
+  }
 
 }

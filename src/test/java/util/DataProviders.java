@@ -14,38 +14,29 @@ import java.util.Random;
 public class DataProviders {
     @DataProvider
     public static Iterator<Object[]> loginPositive() throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class.getResourceAsStream("/LoginPositive.data")));//считывает значения email & password
-        List<Object[]> userData = new ArrayList<>();//массив email & password
-
-        for(String line = in.readLine(); line != null; line = in.readLine()) {
-            userData.add(line.split(";")); //разделитель email & password
-        }
-
-        in.close();
-        return userData.iterator();
+        return chooseDataFromFile("/LoginPositive.data");
     }
-
 
     @DataProvider
     public static Iterator<Object[]> loginNegative() throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class.getResourceAsStream("/LoginNegative.data")));//считывает значения email & password
-        List<Object[]> userData = new ArrayList<>();//массив email & password
-
-        for(String line = in.readLine(); line != null; line = in.readLine()) {
-            userData.add(line.split(";")); //разделитель email & password
-        }
-
-        in.close();
-        return userData.iterator();
+        return chooseDataFromFile("/LoginNegative.data");
     }
 
     @DataProvider
     public static Iterator<Object[]> notValidEmail() throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class.getResourceAsStream("/NotValidEmail.data")));//считывает значения email & password
-        List<Object[]> userData = new ArrayList<>();//массив email & password
+        return chooseDataFromFile("/NotValidEmail.data");
+    }
+    @DataProvider
+    public static Iterator<Object[]> notValidPassword() throws IOException {
+        return chooseDataFromFile("/NotValidPassword.data");
+    }
+
+    public static Iterator<Object[]> chooseDataFromFile(String fileName) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class.getResourceAsStream(fileName)));
+        List<Object[]> userData = new ArrayList<>();
 
         for(String line = in.readLine(); line != null; line = in.readLine()) {
-            userData.add(line.split(";")); //разделитель email & password
+            userData.add(line.split(";"));
         }
 
         in.close();

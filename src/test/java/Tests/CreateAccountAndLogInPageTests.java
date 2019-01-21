@@ -1,11 +1,13 @@
 package Tests;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.*;
 import util.DataProviders;
+import util.LogLog4j;
 
 public class CreateAccountAndLogInPageTests extends TestBase {
 
@@ -16,6 +18,7 @@ public class CreateAccountAndLogInPageTests extends TestBase {
     ProfilePageHelper profilePage;
     MenuPageHelper menuPage;
 
+    private static Logger Log = Logger.getLogger(LogLog4j.class.getName());
 
     @BeforeMethod
     public void initPage() {
@@ -34,6 +37,12 @@ public class CreateAccountAndLogInPageTests extends TestBase {
     @Test  (dataProviderClass = DataProviders.class,dataProvider ="randomUsers" )
     public void createNewAccount (String email,String password) {
 
+        Log.info("-------- Test createNewAccount was started--------");
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Parametr:repeat password = " + password);
+        Log.info("Test createNewAccount:homepage was opened");
+
         homePage.waitUntilPageLoad()
                 .pressCreateAccountButton();
         createAccount.waitUntilPageLoad()
@@ -47,8 +56,9 @@ public class CreateAccountAndLogInPageTests extends TestBase {
         menuPage.waitUntilPageLoad()
                 .pressLogOutButton();
         homePage.waitUntilPageLoad();
+        Log.info("Test createNewAccount- Assert: verify that name " + "'Shabbat in the family circle' is equal to real name'" + homePage.getHeader() + "'");
         Assert.assertEquals(homePage.getHeader(), "Shabbat in the family circle");
-        System.out.println("email: " + email + "  password: " + password);
+        //System.out.println("email: " + email + "  password: " + password);
 
     }
 
@@ -82,6 +92,12 @@ public class CreateAccountAndLogInPageTests extends TestBase {
     @Test (dataProviderClass = DataProviders.class,dataProvider ="randomUsers" )
 
     public void createNewAccountAndLogin (String email,String password){
+
+        Log.info("-------- Test createNewAccountAndLogin was started--------");
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Parametr:repeat password = " + password);
+        Log.info("Test createNewAccount:homepage was opened");
         homePage.waitUntilPageLoad()
                 .pressCreateAccountButton();
         createAccount.waitUntilPageLoad()
@@ -91,13 +107,18 @@ public class CreateAccountAndLogInPageTests extends TestBase {
                 .registrationButtonWaitAndClick();
         profilePage.waitUntilPageLoad()
                 .menuButtonClick();
+        Log.info("Test createNewAccountAndLogin- Assert: verify that name " + "'Registration' is equal to real name'" + profilePage.getHeader() + "'");
         Assert.assertEquals(profilePage.getHeader(),"Registration");
 
         menuPage.waitUntilPageLoad()
                 .pressLogOutButton();
         homePage.waitUntilPageLoad();
+        Log.info("Test createNewAccountAndLogin- Assert: verify that name " + "'Shabbat in the family circle' is equal to real name'" + homePage.getHeader() + "'");
         Assert.assertEquals(homePage.getHeader(),"Shabbat in the family circle");// cравниваем заголовки на странице
 
+        Log.info("Parametr:email = " + email);
+        Log.info("Parametr:password = " + password);
+        Log.info("Test createNewAccount:homepage was opened");
         homePage.waitUntilPageLoad()
                .pressLoginButton();
         loginPage.waitUntilPageLog_InLoaded()
@@ -106,8 +127,9 @@ public class CreateAccountAndLogInPageTests extends TestBase {
         .waitUntilPageLog_InLoaded()
         .log_InPressButton();
         profilePage.waitUntilPageLoad();
+        Log.info("Test createNewAccountAndLogin- Assert: verify that name " + "'Registration' is equal to real name'" + profilePage.getHeader() + "'");
         Assert.assertEquals(profilePage.getHeader(),"Registration");
-        System.out.println("email: " + email + "  password: " + password);
+        //System.out.println("email: " + email + "  password: " + password);
 
 
         //String email2 = latinDigitString(8) + "@gmail.com";
