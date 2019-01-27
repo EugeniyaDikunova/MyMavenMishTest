@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import util.LogLog4j;
 
+import java.util.List;
+
 public class LoginPageHelper extends PageBase {
 
     @FindBy(xpath="//span[contains(text(),'Log in')]")
@@ -23,10 +25,13 @@ public class LoginPageHelper extends PageBase {
 
     @FindBy(xpath = "//div[@class='alert alert-danger ng-star-inserted']")
     WebElement alertText;
-    @FindBy(xpath= "//mat-error[@id='mat-error-10']")
+    @FindBy(xpath= "//*[contains(text(),'valid email')]")// переписали локатор и зацепились за название
     WebElement notValidEmail;
-    @FindBy(xpath= "//mat-error[@id='mat-error-12']")
+    @FindBy(xpath= "//*[contains(text(),'6 characters')]")
     WebElement notValidPassword;
+    @FindBy(xpath = "//*[contains(text(),'This field is mandatory')]")
+    List<WebElement> emptyAlertsList;
+
 
     private static Logger Log = Logger.getLogger(LogLog4j.class.getName());
 
@@ -37,6 +42,7 @@ public class LoginPageHelper extends PageBase {
     public LoginPageHelper waitUntilPageLog_InLoaded() {
        // waitUntilElementIsLoaded (driver,log_InButton,20);
         Log.info("LoginPageHelper: wait until cancelButton is loaded");
+        Log.info("LoginPageHelper: Cancel button was loaded");
         waitUntilElementIsLoaded(driver,cancelButton,20);
         //waitUntilElementIsLoaded(driver,email_field,20);
      return this;
@@ -49,7 +55,8 @@ public LoginPageHelper cancelPushButton (){
 }
 
     public LoginPageHelper emailFieldPressAndSendKeys(String value){
-        Log.info("LoginPageHelper: email was entered in the email field");
+        Log.info("LoginPageHelper: ---enter value emeil---");
+        Log.info("LoginPageHelper: was eneterd email: " + value);
         setValueToField(email_field,value);
         //email_field.click();    создали один метод для всех полей ввода в page base
         //email_field.clear();
@@ -57,7 +64,8 @@ public LoginPageHelper cancelPushButton (){
         return this;
     }
     public LoginPageHelper passwordFieldPressAndSendKeys(String value){
-        Log.info("LoginPageHelper: password  was entered in the password field");
+        Log.info("LoginPageHelper: ---enter value password---");
+        Log.info("LoginPageHelper: was enetered password: " + value);
         setValueToField(password_field,value);
         //password_field.click();
         //password_field.clear();
@@ -65,9 +73,10 @@ public LoginPageHelper cancelPushButton (){
         return this;
     }
     public LoginPageHelper log_InPressButton (){
-        Log.info("LoginPageHelper: wait until login button is loaded");
+        Log.info("LoginPageHelper: --- pressLogInButton() ---");
+        Log.info("LoginPageHelper: wait until Login button is loaded");
        waitUntilElementIsLoaded(driver,log_InButton,20);
-        Log.info("LoginPageHelper:  login button was pressed");
+        Log.info("LoginPageHelper: click on Login button");
         log_InButton.click();
         return this;
     }
@@ -92,5 +101,9 @@ public LoginPageHelper cancelPushButton (){
         Log.info("LoginPageHelper: wait until window with fields email & password is closed");
         waitUntilElementIsAbsent(driver, cancelButton,30);
         return this;
+    }
+
+    public int getQuantityAlertsForEmptyFields(){
+        return emptyAlertsList.size();
     }
 }

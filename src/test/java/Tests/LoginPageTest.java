@@ -28,25 +28,26 @@ public class LoginPageTest extends TestBase
 
     private static Logger Log = Logger.getLogger(LogLog4j.class.getName());
 
-    @BeforeMethod
+ @BeforeMethod
     public void initPage (){
 
         homePage = PageFactory.initElements(driver, HomePageHelper.class);
         loginPage = PageFactory.initElements(driver, LoginPageHelper.class);
         eventsAuthPage = PageFactory.initElements(driver, EventsAuthPageHelper.class);
         menuPage = PageFactory.initElements(driver, MenuPageHelper.class);
+        Log.info("--------BeforeMethod was started--------------");
+        homePage.waitUntilPageLoad()
+                .pressLoginButton();
     }
 
 
-    @Test (dataProviderClass = DataProviders.class,dataProvider ="loginPositive" )
+    @Test (groups = {"sanity","regression"},dataProviderClass = DataProviders.class,dataProvider ="loginPositive" )
     public void LoginPositive (String email,String password) {
 
         Log.info("-------- Test LoginPositive was started--------");
         Log.info("Parametr:email = " + email);
         Log.info("Parametr:password = " + password);
-        Log.info("Test login positive:homepage was opened");
-           homePage.waitUntilPageLoad()
-                    .pressLoginButton();
+
            loginPage.emailFieldPressAndSendKeys(email)
            .passwordFieldPressAndSendKeys(password)
            .waitUntilPageLog_InLoaded()
@@ -85,40 +86,36 @@ public class LoginPageTest extends TestBase
 
         }
 
-    @Test  (dataProviderClass = DataProviders.class,dataProvider ="loginNegative" )
+    @Test  ( groups = {"regression","negative"},dataProviderClass = DataProviders.class,dataProvider ="loginNegative" )
     public void LoginNegative (String email,String password) {
         Log.info("-------- Test LoginNegative was started--------");
         Log.info("Parametr:email = " + email);
         Log.info("Parametr:password = " + password);
-        Log.info("Test login negative:homepage was opened");
-        homePage.waitUntilPageLoad()
-                .pressLoginButton();
-        loginPage.emailFieldPressAndSendKeys(email)
+        Log.info("loginNegative: loginPage was opened");
+        loginPage.waitUntilPageLog_InLoaded()
+                .emailFieldPressAndSendKeys(email)
                 .passwordFieldPressAndSendKeys(password)
-                .waitUntilPageLog_InLoaded()
                 .log_InPressButton();
         Log.info("Test LoginNegative- Assert: verify that name " + "'Wrong authorization, login or password' is equal to real name'" + loginPage.wrongAuthorization() + "'");
         Assert.assertEquals("Wrong authorization, login or password", loginPage.wrongAuthorization());
+        Log.info("loginNegative: loginPage was opened");
         loginPage.cancelPushButton()
                 .waitUntilWindowIsClosed();
-
-      //driver.quit();
     }
 
-    @Test (dataProviderClass = DataProviders.class,dataProvider = "notValidEmail")
+
+    @Test ( groups = {"regression","negative"},dataProviderClass = DataProviders.class,dataProvider = "notValidEmail")
     public void notValidEmail (String email,String password){
         Log.info("-------- Test notValidEmail was started--------");
         Log.info("Parametr:email = " + email);
         Log.info("Parametr:password = " + password);
-        Log.info("Test login notValidEmail :homepage was opened");
-        homePage.waitUntilPageLoad()
-                .pressLoginButton();
+        //Log.info("Test login notValidEmail :homepage was opened");   перенесли в Before Method
+        //homePage.waitUntilPageLoad()
+               // .pressLoginButton();
         loginPage.emailFieldPressAndSendKeys(email)
-                .passwordFieldPressAndSendKeys(password)
-                .waitUntilPageLog_InLoaded();
+                .passwordFieldPressAndSendKeys(password);
 
-        loginPage.notValidEmail();
-        Log.info("Test notValidEmail - Assert: verify that name"  + "'Not a valid email' is equal to real name'" + loginPage.notValidEmail() + "'" );
+              Log.info("Test notValidEmail - Assert: verify that name"  + "'Not a valid email' is equal to real name'" + loginPage.notValidEmail() + "'" );
         Assert.assertEquals("Not a valid email",loginPage.notValidEmail());
         loginPage.cancelPushButton()
                 .waitUntilWindowIsClosed();
@@ -147,27 +144,58 @@ public class LoginPageTest extends TestBase
         //WebElement alertText = driver.findElement(By.xpath("//div[@class='alert alert-danger ng-star-inserted']"));
         //Assert.assertTrue(alertText.getText().equals("Wrong authorization, login or password"));
 
-    @Test (dataProviderClass = DataProviders.class,dataProvider = "notValidPassword")
+    @Test (groups = {"regression","negative"},dataProviderClass = DataProviders.class,dataProvider = "notValidPassword")
     public void notValidPassword (String email,String password){
         Log.info("-------- Test notValidPassword was started--------");
         Log.info("Parametr:email = " + email);
         Log.info("Parametr:password = " + password);
-        Log.info("Test login notValidPassword :homepage was opened");
-        homePage.waitUntilPageLoad()
-                .pressLoginButton();
-        loginPage.emailFieldPressAndSendKeys(email)
-                .passwordFieldPressAndSendKeys(password)
+        //Log.info("Test login notValidPassword :homepage was opened");
+       // homePage.waitUntilPageLoad()
+          //      .pressLoginButton();
+        loginPage .passwordFieldPressAndSendKeys(password)
+                .emailFieldPressAndSendKeys(email)
                 .waitUntilPageLog_InLoaded();
 
-        loginPage.notValidEmail();
         Log.info("Test notValidPassword - Assert: verify that name"  + "'Enter 6 characters' is equal to real name'" + loginPage.notValidPassword() + "'" );
-        Assert.assertEquals("Enter 6 characters",loginPage.notValidPassword());
+        Assert.assertEquals("Enter 6 characters",loginPage.notValidPassword(),"Alert password wasn't correct");
         loginPage.cancelPushButton()
                 .waitUntilWindowIsClosed();
 
     }
 
+
+
+
+    @Test ( groups = {"regression","negative"})
+    public void loginNegativeEmptyEmailPassword(){
+        loginPage.waitUntilPageLog_InLoaded()
+                .emailFieldPressAndSendKeys("")
+                .passwordFieldPressAndSendKeys("")
+                .emailFieldPressAndSendKeys("");
+        Assert.assertEquals(2,loginPage.getQuantityAlertsForEmptyFields());
     }
+
+    @Test ( groups = {"regression","negative"})
+    public void loginNegativeOnlyEmailIsEmpty(){
+        loginPage.waitUntilPageLog_InLoaded()
+                .emailFieldPressAndSendKeys("")
+                .passwordFieldPressAndSendKeys("567890fgd")
+                .emailFieldPressAndSendKeys("");
+        Assert.assertEquals(1,loginPage.getQuantityAlertsForEmptyFields());
+    }
+
+    @Test ( groups = {"regression","negative"})
+    public void loginNegativeOnlyPasswordIsEmpty(){
+        loginPage.waitUntilPageLog_InLoaded()
+                .passwordFieldPressAndSendKeys("")
+                .emailFieldPressAndSendKeys("test@mail.com")
+                .passwordFieldPressAndSendKeys("");
+        Assert.assertEquals(1,loginPage.getQuantityAlertsForEmptyFields());
+    }
+
+
+
+}
 
 
 

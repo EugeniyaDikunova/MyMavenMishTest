@@ -27,18 +27,20 @@ public class HomePagesTests extends TestBase {
         homePage = PageFactory.initElements(driver, HomePageHelper.class);
 
         eventsUnAuthPage = PageFactory.initElements(driver, EventsUnAuthPageHelper.class);
+        Log.info("--------BeforeMethod was stareted-----");
+        Log.info("Test openHomePage: wait until homePage is loaded");
+        homePage.waitUntilPageLoad();
 
     }
 
-    @Test
+    @Test(groups = {"sanity","regression"})
     public void openHomePage()  {
         Log.info("-----Test openHomePage was started");
-        homePage.waitUntilPageLoad();
         Log.info("Test openHomePage: get name of GoToEventButton");
         String goToButtonName =
                 homePage.getGoToEventButtonName();
         Log.info("Test openHomePage - Assert: verify that name " + "'Go to Event list' is equal to real name'" + goToButtonName + "'" );
-        Assert.assertEquals("Go to Event list",goToButtonName);
+        Assert.assertEquals("Go to Event list",goToButtonName, "'Go to Event list' is not equal to real name of the button");
 
         //Thread.sleep(20000);
 
@@ -51,11 +53,10 @@ public class HomePagesTests extends TestBase {
 
     }
 
-    @Test
+    @Test (groups = {"regression"})
     public void goToEventsTest()  {
-        Log.info("-----Test goToEventTest was started");
-        homePage.waitUntilPageLoad()
-        .pressGoToEventButton ();
+
+        homePage.pressGoToEventButton ();
         eventsUnAuthPage.waitUntilPageIsLoaded();
         Log.info("Test goToEventsTest - Assert: verify that name " + "'Find event' is equal to real name'" + eventsUnAuthPage.getHeader() + "'" );
         Assert.assertEquals("Find event",eventsUnAuthPage.getHeader());
