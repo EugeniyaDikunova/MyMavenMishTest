@@ -40,11 +40,9 @@ public class LoginPageHelper extends PageBase {
         super(driver);
     }
     public LoginPageHelper waitUntilPageLog_InLoaded() {
-       // waitUntilElementIsLoaded (driver,log_InButton,20);
         Log.info("LoginPageHelper: wait until cancelButton is loaded");
         Log.info("LoginPageHelper: Cancel button was loaded");
         waitUntilElementIsLoaded(driver,cancelButton,20);
-        //waitUntilElementIsLoaded(driver,email_field,20);
      return this;
     }
 
@@ -99,6 +97,7 @@ public LoginPageHelper cancelPushButton (){
 
     public LoginPageHelper waitUntilWindowIsClosed(){ //метод ожидания закрытия окна ввода email & password
         Log.info("LoginPageHelper: wait until window with fields email & password is closed");
+        Log.info("LoginPageHelper: wait until Cancel button is absent");
         waitUntilElementIsAbsent(driver, cancelButton,30);
         return this;
     }

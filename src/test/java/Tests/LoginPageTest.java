@@ -28,7 +28,7 @@ public class LoginPageTest extends TestBase
 
     private static Logger Log = Logger.getLogger(LogLog4j.class.getName());
 
- @BeforeMethod
+ @BeforeMethod (alwaysRun = true)
     public void initPage (){
 
         homePage = PageFactory.initElements(driver, HomePageHelper.class);
@@ -36,6 +36,7 @@ public class LoginPageTest extends TestBase
         eventsAuthPage = PageFactory.initElements(driver, EventsAuthPageHelper.class);
         menuPage = PageFactory.initElements(driver, MenuPageHelper.class);
         Log.info("--------BeforeMethod was started--------------");
+        Log.info("--BeforeMethod: homePage is opened");
         homePage.waitUntilPageLoad()
                 .pressLoginButton();
     }
@@ -47,11 +48,11 @@ public class LoginPageTest extends TestBase
         Log.info("-------- Test LoginPositive was started--------");
         Log.info("Parametr:email = " + email);
         Log.info("Parametr:password = " + password);
-
-           loginPage.emailFieldPressAndSendKeys(email)
-           .passwordFieldPressAndSendKeys(password)
-           .waitUntilPageLog_InLoaded()
-           .log_InPressButton();
+        Log.info("Test login Positive: homePage was opened");
+           loginPage.waitUntilPageLog_InLoaded()
+                   .emailFieldPressAndSendKeys(email)
+                   .passwordFieldPressAndSendKeys(password)
+                   .log_InPressButton();
            eventsAuthPage.waitUntilPageMenuIconLoaded();
         Log.info("Test LoginPositive - Assert: verify that name"  + "'Menu' is equal to real name'" + eventsAuthPage.getTooltipIconMenu() + "'" );
         Assert.assertEquals("Menu",eventsAuthPage.getTooltipIconMenu());
@@ -112,9 +113,9 @@ public class LoginPageTest extends TestBase
         //Log.info("Test login notValidEmail :homepage was opened");   перенесли в Before Method
         //homePage.waitUntilPageLoad()
                // .pressLoginButton();
-        loginPage.emailFieldPressAndSendKeys(email)
+        loginPage.waitUntilPageLog_InLoaded()
+                .emailFieldPressAndSendKeys(email)
                 .passwordFieldPressAndSendKeys(password);
-
               Log.info("Test notValidEmail - Assert: verify that name"  + "'Not a valid email' is equal to real name'" + loginPage.notValidEmail() + "'" );
         Assert.assertEquals("Not a valid email",loginPage.notValidEmail());
         loginPage.cancelPushButton()
@@ -152,15 +153,13 @@ public class LoginPageTest extends TestBase
         //Log.info("Test login notValidPassword :homepage was opened");
        // homePage.waitUntilPageLoad()
           //      .pressLoginButton();
-        loginPage .passwordFieldPressAndSendKeys(password)
-                .emailFieldPressAndSendKeys(email)
-                .waitUntilPageLog_InLoaded();
-
+        loginPage.waitUntilPageLog_InLoaded()
+                .passwordFieldPressAndSendKeys(password)
+                .emailFieldPressAndSendKeys(email);
         Log.info("Test notValidPassword - Assert: verify that name"  + "'Enter 6 characters' is equal to real name'" + loginPage.notValidPassword() + "'" );
         Assert.assertEquals("Enter 6 characters",loginPage.notValidPassword(),"Alert password wasn't correct");
         loginPage.cancelPushButton()
                 .waitUntilWindowIsClosed();
-
     }
 
 
@@ -188,7 +187,7 @@ public class LoginPageTest extends TestBase
     public void loginNegativeOnlyPasswordIsEmpty(){
         loginPage.waitUntilPageLog_InLoaded()
                 .passwordFieldPressAndSendKeys("")
-                .emailFieldPressAndSendKeys("test@mail.com")
+                .emailFieldPressAndSendKeys("jmenka@gmail.com")
                 .passwordFieldPressAndSendKeys("");
         Assert.assertEquals(1,loginPage.getQuantityAlertsForEmptyFields());
     }

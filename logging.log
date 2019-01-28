@@ -2901,3 +2901,1054 @@
 2019-01-27 20:55:23 INFO  LogLog4j:38 - -----Test openHomePage was started
 2019-01-27 20:55:23 INFO  LogLog4j:39 - Test openHomePage: get name of GoToEventButton
 2019-01-27 20:55:23 INFO  LogLog4j:42 - Test openHomePage - Assert: verify that name 'Go to Event list' is equal to real name'Go to Event list'
+2019-01-28 11:13:30 INFO  LogLog4j:30 - --------BeforeMethod was stareted-----
+2019-01-28 11:13:30 INFO  LogLog4j:31 - Test openHomePage: wait until homePage is loaded
+2019-01-28 11:13:30 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:13:30 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:13:31 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:13:31 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:13:31 INFO  LogLog4j:54 - HomePageHelper: button goToEvent was pressed
+2019-01-28 11:13:31 INFO  LogLog4j:28 - EventsUnAuthPageHelper:wait until button Filter is loaded 
+2019-01-28 11:13:34 INFO  LogLog4j:61 - Test goToEventsTest - Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 11:13:35 INFO  LogLog4j:30 - --------BeforeMethod was stareted-----
+2019-01-28 11:13:35 INFO  LogLog4j:31 - Test openHomePage: wait until homePage is loaded
+2019-01-28 11:13:35 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:13:35 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:13:35 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:13:35 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:13:35 INFO  LogLog4j:38 - -----Test openHomePage was started
+2019-01-28 11:13:35 INFO  LogLog4j:39 - Test openHomePage: get name of GoToEventButton
+2019-01-28 11:13:35 INFO  LogLog4j:42 - Test openHomePage - Assert: verify that name 'Go to Event list' is equal to real name'Go to Event list'
+2019-01-28 11:33:10 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:10 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:10 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:11 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:11 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:11 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:19 INFO  LogLog4j:91 - -------- Test LoginNegative was started--------
+2019-01-28 11:33:19 INFO  LogLog4j:92 - Parametr:email = jmenkaA@gmail.com
+2019-01-28 11:33:19 INFO  LogLog4j:93 - Parametr:password = 221263
+2019-01-28 11:33:19 INFO  LogLog4j:94 - loginNegative: loginPage was opened
+2019-01-28 11:33:19 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:19 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:20 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:20 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenkaA@gmail.com
+2019-01-28 11:33:23 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:23 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 221263
+2019-01-28 11:33:24 INFO  LogLog4j:76 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 11:33:24 INFO  LogLog4j:77 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 11:33:24 INFO  LogLog4j:79 - LoginPageHelper: click on Login button
+2019-01-28 11:33:24 INFO  LogLog4j:84 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 11:33:26 INFO  LogLog4j:99 - Test LoginNegative- Assert: verify that name 'Wrong authorization, login or password' is equal to real name'Wrong authorization, login or password'
+2019-01-28 11:33:26 INFO  LogLog4j:84 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 11:33:27 INFO  LogLog4j:101 - loginNegative: loginPage was opened
+2019-01-28 11:33:27 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:33:27 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:33:29 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:29 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:29 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:30 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:30 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:30 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:30 INFO  LogLog4j:91 - -------- Test LoginNegative was started--------
+2019-01-28 11:33:30 INFO  LogLog4j:92 - Parametr:email = jeeenya@gmail.com
+2019-01-28 11:33:30 INFO  LogLog4j:93 - Parametr:password = 221263
+2019-01-28 11:33:30 INFO  LogLog4j:94 - loginNegative: loginPage was opened
+2019-01-28 11:33:30 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:30 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:30 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:30 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jeeenya@gmail.com
+2019-01-28 11:33:32 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:32 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 221263
+2019-01-28 11:33:32 INFO  LogLog4j:76 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 11:33:32 INFO  LogLog4j:77 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 11:33:32 INFO  LogLog4j:79 - LoginPageHelper: click on Login button
+2019-01-28 11:33:33 INFO  LogLog4j:84 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 11:33:33 INFO  LogLog4j:99 - Test LoginNegative- Assert: verify that name 'Wrong authorization, login or password' is equal to real name'Wrong authorization, login or password'
+2019-01-28 11:33:33 INFO  LogLog4j:84 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 11:33:33 INFO  LogLog4j:101 - loginNegative: loginPage was opened
+2019-01-28 11:33:33 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:33:33 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:33:35 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:35 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:35 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:35 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:35 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:35 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:35 INFO  LogLog4j:47 - -------- Test LoginPositive was started--------
+2019-01-28 11:33:35 INFO  LogLog4j:48 - Parametr:email = jmenka@gmail.com
+2019-01-28 11:33:35 INFO  LogLog4j:49 - Parametr:password = 221263
+2019-01-28 11:33:35 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:35 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 11:33:36 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:36 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 221263
+2019-01-28 11:33:36 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:36 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:36 INFO  LogLog4j:76 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 11:33:36 INFO  LogLog4j:77 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 11:33:36 INFO  LogLog4j:79 - LoginPageHelper: click on Login button
+2019-01-28 11:33:36 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 11:33:38 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 11:33:43 INFO  LogLog4j:56 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 11:33:45 INFO  LogLog4j:58 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 11:33:45 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 11:33:46 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 11:33:46 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 11:33:47 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:65 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 11:33:47 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:47 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:47 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:48 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:48 INFO  LogLog4j:47 - -------- Test LoginPositive was started--------
+2019-01-28 11:33:48 INFO  LogLog4j:48 - Parametr:email = jmenkaLongLongLong@gmail.com
+2019-01-28 11:33:48 INFO  LogLog4j:49 - Parametr:password = jmenkaLongLongLong@gmail.com
+2019-01-28 11:33:48 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:48 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenkaLongLongLong@gmail.com
+2019-01-28 11:33:49 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:49 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: jmenkaLongLongLong@gmail.com
+2019-01-28 11:33:49 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:49 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:49 INFO  LogLog4j:76 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 11:33:49 INFO  LogLog4j:77 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 11:33:49 INFO  LogLog4j:79 - LoginPageHelper: click on Login button
+2019-01-28 11:33:49 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 11:33:50 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 11:33:50 INFO  LogLog4j:56 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 11:33:50 INFO  LogLog4j:58 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 11:33:50 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 11:33:51 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 11:33:51 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 11:33:51 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:51 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:51 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:51 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:51 INFO  LogLog4j:65 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 11:33:52 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:52 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:52 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:52 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:52 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:52 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:52 INFO  LogLog4j:47 - -------- Test LoginPositive was started--------
+2019-01-28 11:33:52 INFO  LogLog4j:48 - Parametr:email = Jenya@gmail.com
+2019-01-28 11:33:52 INFO  LogLog4j:49 - Parametr:password = example
+2019-01-28 11:33:52 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:52 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: Jenya@gmail.com
+2019-01-28 11:33:52 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:52 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: example
+2019-01-28 11:33:53 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:53 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:53 INFO  LogLog4j:76 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 11:33:53 INFO  LogLog4j:77 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 11:33:53 INFO  LogLog4j:79 - LoginPageHelper: click on Login button
+2019-01-28 11:33:53 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 11:33:53 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 11:33:54 INFO  LogLog4j:56 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 11:33:54 INFO  LogLog4j:58 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 11:33:54 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 11:33:54 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 11:33:54 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 11:33:54 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:54 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:54 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:54 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:55 INFO  LogLog4j:65 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 11:33:55 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:55 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:55 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:55 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:55 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:55 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:55 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:55 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:55 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:55 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 11:33:56 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:56 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 
+2019-01-28 11:33:56 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:56 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 11:33:56 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:56 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:56 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:56 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:56 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:56 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:56 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:56 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:57 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:57 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 11:33:57 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:57 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 567890fgd
+2019-01-28 11:33:57 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:57 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 11:33:58 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:58 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:58 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:33:58 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:33:58 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 
+2019-01-28 11:33:58 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:58 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:58 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:59 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:59 INFO  LogLog4j:109 - -------- Test notValidEmail was started--------
+2019-01-28 11:33:59 INFO  LogLog4j:110 - Parametr:email = ыкриыерте@mail.com
+2019-01-28 11:33:59 INFO  LogLog4j:111 - Parametr:password = 123456
+2019-01-28 11:33:59 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:59 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: ыкриыерте@mail.com
+2019-01-28 11:33:59 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:33:59 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:33:59 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:33:59 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:33:59 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:33:59 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:33:59 INFO  LogLog4j:109 - -------- Test notValidEmail was started--------
+2019-01-28 11:33:59 INFO  LogLog4j:110 - Parametr:email = jmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenka@gmail.com
+2019-01-28 11:33:59 INFO  LogLog4j:111 - Parametr:password = 123456
+2019-01-28 11:33:59 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:33:59 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenka@gmail.com
+2019-01-28 11:34:01 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:34:01 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 123456
+2019-01-28 11:34:01 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:01 INFO  LogLog4j:118 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 11:34:01 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:01 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:34:01 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:34:02 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:34:02 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:34:02 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:34:02 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:34:02 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:34:02 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:34:02 INFO  LogLog4j:109 - -------- Test notValidEmail was started--------
+2019-01-28 11:34:02 INFO  LogLog4j:110 - Parametr:email = jmenka@
+2019-01-28 11:34:02 INFO  LogLog4j:111 - Parametr:password = 123456
+2019-01-28 11:34:02 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:34:02 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenka@
+2019-01-28 11:34:03 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:34:03 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 123456
+2019-01-28 11:34:03 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:03 INFO  LogLog4j:118 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 11:34:03 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:03 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:34:03 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:34:04 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:34:04 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:34:04 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:34:04 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:34:04 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:34:04 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:34:04 INFO  LogLog4j:109 - -------- Test notValidEmail was started--------
+2019-01-28 11:34:04 INFO  LogLog4j:110 - Parametr:email = example.email
+2019-01-28 11:34:04 INFO  LogLog4j:111 - Parametr:password = 123456
+2019-01-28 11:34:04 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:34:04 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: example.email
+2019-01-28 11:34:04 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:34:04 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 123456
+2019-01-28 11:34:05 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:05 INFO  LogLog4j:118 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 11:34:05 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:05 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:34:05 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:34:05 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:34:05 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:34:05 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:34:05 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:34:06 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:34:06 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:34:06 INFO  LogLog4j:109 - -------- Test notValidEmail was started--------
+2019-01-28 11:34:06 INFO  LogLog4j:110 - Parametr:email = 123456
+2019-01-28 11:34:06 INFO  LogLog4j:111 - Parametr:password = %^%#$^
+2019-01-28 11:34:06 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:34:06 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 123456
+2019-01-28 11:34:06 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:34:06 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: %^%#$^
+2019-01-28 11:34:06 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:06 INFO  LogLog4j:118 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 11:34:06 INFO  LogLog4j:90 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 11:34:07 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:34:07 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:34:07 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:34:07 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:34:07 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:34:07 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:34:07 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:34:07 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:34:07 INFO  LogLog4j:149 - -------- Test notValidPassword was started--------
+2019-01-28 11:34:07 INFO  LogLog4j:150 - Parametr:email = jmenka@gmail.com
+2019-01-28 11:34:07 INFO  LogLog4j:151 - Parametr:password = 22
+2019-01-28 11:34:07 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:34:07 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 22
+2019-01-28 11:34:08 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:34:08 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 11:34:08 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:34:08 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:34:08 INFO  LogLog4j:95 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 11:34:08 INFO  LogLog4j:159 - Test notValidPassword - Assert: verify that name'Enter 6 characters' is equal to real name'Enter 6 characters'
+2019-01-28 11:34:08 INFO  LogLog4j:95 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 11:34:08 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:34:08 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:34:09 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:34:09 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:34:09 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:34:09 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:34:09 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:34:09 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:34:09 INFO  LogLog4j:149 - -------- Test notValidPassword was started--------
+2019-01-28 11:34:09 INFO  LogLog4j:150 - Parametr:email = jmenka@gmail.com
+2019-01-28 11:34:09 INFO  LogLog4j:151 - Parametr:password =  #$%
+2019-01-28 11:34:09 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:34:09 INFO  LogLog4j:68 - LoginPageHelper: was enetered password:  #$%
+2019-01-28 11:34:09 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:34:09 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 11:34:10 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:34:10 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:34:10 INFO  LogLog4j:95 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 11:34:10 INFO  LogLog4j:159 - Test notValidPassword - Assert: verify that name'Enter 6 characters' is equal to real name'Enter 6 characters'
+2019-01-28 11:34:10 INFO  LogLog4j:95 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 11:34:10 INFO  LogLog4j:52 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 11:34:10 INFO  LogLog4j:101 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 11:41:13 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 11:41:14 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 11:41:14 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 11:41:17 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 11:41:17 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 11:41:17 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 11:41:24 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 11:41:24 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 11:41:27 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:41:27 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 
+2019-01-28 11:41:29 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 11:41:29 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: test@mail.com
+2019-01-28 11:41:32 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 11:41:32 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 
+2019-01-28 12:15:36 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:15:36 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:15:36 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:15:36 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:15:37 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:15:37 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:15:37 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:15:38 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:15:38 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:15:38 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:15:38 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:15:39 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 12:15:39 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 
+2019-01-28 12:15:39 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:15:39 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:16:18 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:16:18 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:16:18 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:16:18 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:16:18 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:16:18 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:16:18 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:16:18 INFO  LogLog4j:44 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:16:18 INFO  LogLog4j:45 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:16:18 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:16:18 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:16:19 INFO  LogLog4j:67 - LoginPageHelper: ---enter value password---
+2019-01-28 12:16:19 INFO  LogLog4j:68 - LoginPageHelper: was enetered password: 567890fgd
+2019-01-28 12:16:21 INFO  LogLog4j:58 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:16:21 INFO  LogLog4j:59 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:39:15 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:15 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:15 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:15 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:15 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:15 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:15 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:16 INFO  LogLog4j:92 - -------- Test LoginNegative was started--------
+2019-01-28 12:39:16 INFO  LogLog4j:93 - Parametr:email = jmenkaA@gmail.com
+2019-01-28 12:39:16 INFO  LogLog4j:94 - Parametr:password = 221263
+2019-01-28 12:39:16 INFO  LogLog4j:95 - loginNegative: loginPage was opened
+2019-01-28 12:39:16 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:16 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:16 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:16 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenkaA@gmail.com
+2019-01-28 12:39:17 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:17 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 221263
+2019-01-28 12:39:18 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:39:18 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:39:18 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:39:18 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:39:20 INFO  LogLog4j:100 - Test LoginNegative- Assert: verify that name 'Wrong authorization, login or password' is equal to real name'Wrong authorization, login or password'
+2019-01-28 12:39:20 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:39:20 INFO  LogLog4j:102 - loginNegative: loginPage was opened
+2019-01-28 12:39:20 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:20 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:20 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:20 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:20 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:20 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:20 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:20 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:20 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:20 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:21 INFO  LogLog4j:92 - -------- Test LoginNegative was started--------
+2019-01-28 12:39:21 INFO  LogLog4j:93 - Parametr:email = jeeenya@gmail.com
+2019-01-28 12:39:21 INFO  LogLog4j:94 - Parametr:password = 221263
+2019-01-28 12:39:21 INFO  LogLog4j:95 - loginNegative: loginPage was opened
+2019-01-28 12:39:21 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:21 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:21 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:21 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jeeenya@gmail.com
+2019-01-28 12:39:22 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:22 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 221263
+2019-01-28 12:39:22 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:39:22 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:39:22 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:39:22 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:39:23 INFO  LogLog4j:100 - Test LoginNegative- Assert: verify that name 'Wrong authorization, login or password' is equal to real name'Wrong authorization, login or password'
+2019-01-28 12:39:23 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:39:23 INFO  LogLog4j:102 - loginNegative: loginPage was opened
+2019-01-28 12:39:23 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:23 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:23 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:23 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:23 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:23 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:23 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:24 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:24 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:24 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:24 INFO  LogLog4j:48 - -------- Test LoginPositive was started--------
+2019-01-28 12:39:24 INFO  LogLog4j:49 - Parametr:email = jmenka@gmail.com
+2019-01-28 12:39:24 INFO  LogLog4j:50 - Parametr:password = 221263
+2019-01-28 12:39:24 INFO  LogLog4j:51 - Test login Positive: homePage was opened
+2019-01-28 12:39:24 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:24 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:24 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:24 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:39:25 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:25 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 221263
+2019-01-28 12:39:25 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:39:25 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:39:25 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:39:25 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 12:39:26 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 12:39:28 INFO  LogLog4j:57 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 12:39:28 INFO  LogLog4j:59 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 12:39:28 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 12:39:30 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 12:39:30 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 12:39:30 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:30 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:30 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:30 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:31 INFO  LogLog4j:66 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 12:39:31 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:31 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:31 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:31 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:31 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:31 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:31 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:31 INFO  LogLog4j:48 - -------- Test LoginPositive was started--------
+2019-01-28 12:39:31 INFO  LogLog4j:49 - Parametr:email = jmenkaLongLongLong@gmail.com
+2019-01-28 12:39:31 INFO  LogLog4j:50 - Parametr:password = jmenkaLongLongLong@gmail.com
+2019-01-28 12:39:31 INFO  LogLog4j:51 - Test login Positive: homePage was opened
+2019-01-28 12:39:31 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:31 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:31 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:31 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenkaLongLongLong@gmail.com
+2019-01-28 12:39:32 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:32 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: jmenkaLongLongLong@gmail.com
+2019-01-28 12:39:32 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:39:32 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:39:33 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:39:33 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 12:39:33 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 12:39:34 INFO  LogLog4j:57 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 12:39:34 INFO  LogLog4j:59 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 12:39:34 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 12:39:34 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 12:39:34 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 12:39:34 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:34 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:34 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:34 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:35 INFO  LogLog4j:66 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 12:39:35 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:35 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:35 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:35 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:35 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:35 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:35 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:35 INFO  LogLog4j:48 - -------- Test LoginPositive was started--------
+2019-01-28 12:39:35 INFO  LogLog4j:49 - Parametr:email = Jenya@gmail.com
+2019-01-28 12:39:35 INFO  LogLog4j:50 - Parametr:password = example
+2019-01-28 12:39:35 INFO  LogLog4j:51 - Test login Positive: homePage was opened
+2019-01-28 12:39:35 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:35 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:35 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:35 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: Jenya@gmail.com
+2019-01-28 12:39:36 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:36 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: example
+2019-01-28 12:39:36 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:39:36 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:39:36 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:39:36 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 12:39:37 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 12:39:37 INFO  LogLog4j:57 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 12:39:37 INFO  LogLog4j:59 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 12:39:37 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 12:39:38 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 12:39:38 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 12:39:38 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:38 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:38 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:38 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:39 INFO  LogLog4j:66 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 12:39:39 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:39 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:39 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:39 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:39 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:39 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:39 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:39 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:39 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:39 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:39 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:39:39 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:39 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 
+2019-01-28 12:39:40 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:40 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:39:40 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:40 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:40 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:40 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:40 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:40 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:40 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:40 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:40 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:40 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:40 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:39:41 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:41 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 567890fgd
+2019-01-28 12:39:41 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:41 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:39:41 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:41 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:41 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:41 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:41 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:41 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:41 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:41 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:41 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:42 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:42 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 
+2019-01-28 12:39:42 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:42 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:42 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:42 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:42 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:42 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:42 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:42 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:39:42 INFO  LogLog4j:111 - Parametr:email = ыкриыерте@mail.com
+2019-01-28 12:39:42 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:39:42 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:42 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:42 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:42 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: ыкриыерте@mail.com
+2019-01-28 12:39:43 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:43 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:39:43 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:43 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:39:43 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:43 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:43 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:43 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:44 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:44 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:44 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:44 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:44 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:44 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:44 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:44 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:39:44 INFO  LogLog4j:111 - Parametr:email = jmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenka@gmail.com
+2019-01-28 12:39:44 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:39:44 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:44 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:44 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:44 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenka@gmail.com
+2019-01-28 12:39:45 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:45 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:39:46 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:46 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:39:46 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:46 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:46 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:46 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:46 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:46 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:46 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:46 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:46 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:46 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:46 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:47 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:39:47 INFO  LogLog4j:111 - Parametr:email = jmenka@
+2019-01-28 12:39:47 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:39:47 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:47 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:47 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:47 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@
+2019-01-28 12:39:47 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:47 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:39:47 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:47 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:39:47 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:47 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:47 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:47 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:48 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:48 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:48 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:48 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:48 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:48 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:48 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:48 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:39:48 INFO  LogLog4j:111 - Parametr:email = example.email
+2019-01-28 12:39:48 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:39:48 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:48 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:48 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:48 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: example.email
+2019-01-28 12:39:49 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:49 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:39:49 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:49 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:39:49 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:49 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:49 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:49 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:50 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:50 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:50 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:50 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:50 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:50 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:50 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:50 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:39:50 INFO  LogLog4j:111 - Parametr:email = 123456
+2019-01-28 12:39:50 INFO  LogLog4j:112 - Parametr:password = %^%#$^
+2019-01-28 12:39:50 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:50 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:50 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:50 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 123456
+2019-01-28 12:39:51 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:51 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: %^%#$^
+2019-01-28 12:39:51 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:51 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:39:51 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:39:51 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:51 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:51 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:52 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:52 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:52 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:52 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:52 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:52 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:52 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:52 INFO  LogLog4j:150 - -------- Test notValidPassword was started--------
+2019-01-28 12:39:52 INFO  LogLog4j:151 - Parametr:email = jmenka@gmail.com
+2019-01-28 12:39:52 INFO  LogLog4j:152 - Parametr:password = 22
+2019-01-28 12:39:52 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:52 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:52 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:52 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 22
+2019-01-28 12:39:52 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:52 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:39:53 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 12:39:53 INFO  LogLog4j:159 - Test notValidPassword - Assert: verify that name'Enter 6 characters' is equal to real name'Enter 6 characters'
+2019-01-28 12:39:53 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 12:39:53 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:53 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:53 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:39:54 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:39:54 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:39:54 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:39:54 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:39:54 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:39:54 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:39:54 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:39:54 INFO  LogLog4j:150 - -------- Test notValidPassword was started--------
+2019-01-28 12:39:54 INFO  LogLog4j:151 - Parametr:email = jmenka@gmail.com
+2019-01-28 12:39:54 INFO  LogLog4j:152 - Parametr:password =  #$%
+2019-01-28 12:39:54 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:39:54 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:39:54 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:39:54 INFO  LogLog4j:66 - LoginPageHelper: was enetered password:  #$%
+2019-01-28 12:39:54 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:39:54 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:39:55 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 12:39:55 INFO  LogLog4j:159 - Test notValidPassword - Assert: verify that name'Enter 6 characters' is equal to real name'Enter 6 characters'
+2019-01-28 12:39:55 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 12:39:55 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:39:55 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:39:55 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:44:06 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:44:06 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:44:06 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:44:06 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:44:06 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:44:06 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:44:06 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:44:07 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:44:07 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:44:07 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:44:07 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 
+2019-01-28 12:44:07 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:44:07 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:44:08 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:44:08 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 
+2019-01-28 12:54:02 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:02 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:02 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:02 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:03 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:03 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:03 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:08 INFO  LogLog4j:92 - -------- Test LoginNegative was started--------
+2019-01-28 12:54:08 INFO  LogLog4j:93 - Parametr:email = jmenkaA@gmail.com
+2019-01-28 12:54:08 INFO  LogLog4j:94 - Parametr:password = 221263
+2019-01-28 12:54:08 INFO  LogLog4j:95 - loginNegative: loginPage was opened
+2019-01-28 12:54:08 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:08 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:09 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:09 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenkaA@gmail.com
+2019-01-28 12:54:10 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:10 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 221263
+2019-01-28 12:54:11 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:54:11 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:54:11 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:54:12 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:54:13 INFO  LogLog4j:100 - Test LoginNegative- Assert: verify that name 'Wrong authorization, login or password' is equal to real name'Wrong authorization, login or password'
+2019-01-28 12:54:13 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:54:13 INFO  LogLog4j:102 - loginNegative: loginPage was opened
+2019-01-28 12:54:13 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:13 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:13 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:14 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:14 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:14 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:14 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:14 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:14 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:14 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:14 INFO  LogLog4j:92 - -------- Test LoginNegative was started--------
+2019-01-28 12:54:14 INFO  LogLog4j:93 - Parametr:email = jeeenya@gmail.com
+2019-01-28 12:54:14 INFO  LogLog4j:94 - Parametr:password = 221263
+2019-01-28 12:54:14 INFO  LogLog4j:95 - loginNegative: loginPage was opened
+2019-01-28 12:54:14 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:14 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:14 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:14 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jeeenya@gmail.com
+2019-01-28 12:54:15 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:15 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 221263
+2019-01-28 12:54:16 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:54:16 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:54:16 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:54:16 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:54:16 INFO  LogLog4j:100 - Test LoginNegative- Assert: verify that name 'Wrong authorization, login or password' is equal to real name'Wrong authorization, login or password'
+2019-01-28 12:54:16 INFO  LogLog4j:82 - LoginPageHelper: wait until alert text wrong Authorization is loaded
+2019-01-28 12:54:16 INFO  LogLog4j:102 - loginNegative: loginPage was opened
+2019-01-28 12:54:16 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:16 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:16 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:17 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:17 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:17 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:17 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:17 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:17 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:17 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:17 INFO  LogLog4j:48 - -------- Test LoginPositive was started--------
+2019-01-28 12:54:17 INFO  LogLog4j:49 - Parametr:email = jmenka@gmail.com
+2019-01-28 12:54:17 INFO  LogLog4j:50 - Parametr:password = 221263
+2019-01-28 12:54:17 INFO  LogLog4j:51 - Test login Positive: homePage was opened
+2019-01-28 12:54:17 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:17 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:17 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:17 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:54:18 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:18 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 221263
+2019-01-28 12:54:19 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:54:19 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:54:19 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:54:19 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 12:54:20 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 12:54:22 INFO  LogLog4j:57 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 12:54:22 INFO  LogLog4j:59 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 12:54:23 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 12:54:25 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 12:54:25 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 12:54:25 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:25 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:25 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:25 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:26 INFO  LogLog4j:66 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 12:54:26 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:26 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:26 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:26 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:26 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:26 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:26 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:26 INFO  LogLog4j:48 - -------- Test LoginPositive was started--------
+2019-01-28 12:54:26 INFO  LogLog4j:49 - Parametr:email = jmenkaLongLongLong@gmail.com
+2019-01-28 12:54:26 INFO  LogLog4j:50 - Parametr:password = jmenkaLongLongLong@gmail.com
+2019-01-28 12:54:26 INFO  LogLog4j:51 - Test login Positive: homePage was opened
+2019-01-28 12:54:26 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:26 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:26 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:26 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenkaLongLongLong@gmail.com
+2019-01-28 12:54:27 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:27 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: jmenkaLongLongLong@gmail.com
+2019-01-28 12:54:28 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:54:28 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:54:28 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:54:28 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 12:54:29 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 12:54:29 INFO  LogLog4j:57 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 12:54:29 INFO  LogLog4j:59 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 12:54:29 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 12:54:30 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 12:54:30 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 12:54:30 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:30 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:30 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:30 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:31 INFO  LogLog4j:66 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 12:54:31 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:31 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:31 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:31 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:31 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:31 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:31 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:31 INFO  LogLog4j:48 - -------- Test LoginPositive was started--------
+2019-01-28 12:54:31 INFO  LogLog4j:49 - Parametr:email = Jenya@gmail.com
+2019-01-28 12:54:31 INFO  LogLog4j:50 - Parametr:password = example
+2019-01-28 12:54:31 INFO  LogLog4j:51 - Test login Positive: homePage was opened
+2019-01-28 12:54:31 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:31 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:31 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:31 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: Jenya@gmail.com
+2019-01-28 12:54:31 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:31 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: example
+2019-01-28 12:54:32 INFO  LogLog4j:74 - LoginPageHelper: --- pressLogInButton() ---
+2019-01-28 12:54:32 INFO  LogLog4j:75 - LoginPageHelper: wait until Login button is loaded
+2019-01-28 12:54:32 INFO  LogLog4j:77 - LoginPageHelper: click on Login button
+2019-01-28 12:54:32 INFO  LogLog4j:34 - EventsAuthPageHelper: wait until menuButton is loaded
+2019-01-28 12:54:32 INFO  LogLog4j:36 - EventsAuthPageHelper: wait until filterButton is loaded
+2019-01-28 12:54:33 INFO  LogLog4j:57 - Test LoginPositive - Assert: verify that name'Menu' is equal to real name'Menu'
+2019-01-28 12:54:33 INFO  LogLog4j:59 - Test LoginPositive- Assert: verify that name 'Find event' is equal to real name'Find event'
+2019-01-28 12:54:33 INFO  LogLog4j:52 - EventsAuthPageHelper: menuButton was clicked
+2019-01-28 12:54:33 INFO  LogLog4j:23 - MenuPageHelper: wait until  logOutButton is loaded
+2019-01-28 12:54:33 INFO  LogLog4j:29 - MenuPageHelper:  logOutButton was pressed
+2019-01-28 12:54:33 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:33 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:33 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:33 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:34 INFO  LogLog4j:66 - Test LoginPositive- Assert: verify that name 'Shabbat in the family circle' is equal to real name'Shabbat in the family circle'
+2019-01-28 12:54:34 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:34 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:34 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:34 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:34 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:34 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:34 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:34 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:34 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:34 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:34 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:54:35 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:35 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 
+2019-01-28 12:54:35 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:35 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:54:35 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:35 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:35 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:35 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:35 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:35 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:35 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:36 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:36 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:36 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:36 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 
+2019-01-28 12:54:36 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:36 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:36 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:36 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:36 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:36 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:36 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:36 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:36 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:36 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:36 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 
+2019-01-28 12:54:37 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:37 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:37 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:37 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:54:37 INFO  LogLog4j:111 - Parametr:email = ыкриыерте@mail.com
+2019-01-28 12:54:37 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:54:37 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:37 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:37 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: ыкриыерте@mail.com
+2019-01-28 12:54:37 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:37 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:37 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:37 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:38 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:54:38 INFO  LogLog4j:111 - Parametr:email = jmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenka@gmail.com
+2019-01-28 12:54:38 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:54:38 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:38 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:38 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:38 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenkajmenka@gmail.com
+2019-01-28 12:54:39 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:39 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:54:39 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:39 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:54:39 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:39 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:39 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:39 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:40 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:40 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:40 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:40 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:40 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:40 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:40 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:40 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:54:40 INFO  LogLog4j:111 - Parametr:email = jmenka@
+2019-01-28 12:54:40 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:54:40 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:40 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:40 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:40 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@
+2019-01-28 12:54:41 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:41 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:54:41 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:41 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:54:41 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:41 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:41 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:41 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:42 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:42 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:42 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:42 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:42 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:42 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:42 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:42 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:54:42 INFO  LogLog4j:111 - Parametr:email = example.email
+2019-01-28 12:54:42 INFO  LogLog4j:112 - Parametr:password = 123456
+2019-01-28 12:54:42 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:42 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:42 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:42 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: example.email
+2019-01-28 12:54:42 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:42 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 123456
+2019-01-28 12:54:43 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:43 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:54:43 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:43 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:43 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:43 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:44 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:44 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:44 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:44 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:44 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:44 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:44 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:44 INFO  LogLog4j:110 - -------- Test notValidEmail was started--------
+2019-01-28 12:54:44 INFO  LogLog4j:111 - Parametr:email = 123456
+2019-01-28 12:54:44 INFO  LogLog4j:112 - Parametr:password = %^%#$^
+2019-01-28 12:54:44 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:44 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:44 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:44 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: 123456
+2019-01-28 12:54:44 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:44 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: %^%#$^
+2019-01-28 12:54:44 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:45 INFO  LogLog4j:119 - Test notValidEmail - Assert: verify that name'Not a valid email' is equal to real name'Not a valid email'
+2019-01-28 12:54:45 INFO  LogLog4j:88 - LoginPageHelper: wait until alert text not a Valid Email  is loaded
+2019-01-28 12:54:45 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:45 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:45 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:45 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:45 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:45 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:45 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:45 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:45 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:45 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:46 INFO  LogLog4j:150 - -------- Test notValidPassword was started--------
+2019-01-28 12:54:46 INFO  LogLog4j:151 - Parametr:email = jmenka@gmail.com
+2019-01-28 12:54:46 INFO  LogLog4j:152 - Parametr:password = 22
+2019-01-28 12:54:46 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:46 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:46 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:46 INFO  LogLog4j:66 - LoginPageHelper: was enetered password: 22
+2019-01-28 12:54:46 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:46 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:54:47 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 12:54:47 INFO  LogLog4j:159 - Test notValidPassword - Assert: verify that name'Enter 6 characters' is equal to real name'Enter 6 characters'
+2019-01-28 12:54:47 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
+2019-01-28 12:54:47 INFO  LogLog4j:50 - LoginPageHelper:  cancelButton was pressed
+2019-01-28 12:54:47 INFO  LogLog4j:99 - LoginPageHelper: wait until window with fields email & password is closed
+2019-01-28 12:54:47 INFO  LogLog4j:100 - LoginPageHelper: wait until Cancel button is absent
+2019-01-28 12:54:47 INFO  LogLog4j:38 - --------BeforeMethod was started--------------
+2019-01-28 12:54:47 INFO  LogLog4j:39 - --BeforeMethod: homePage is opened
+2019-01-28 12:54:47 INFO  LogLog4j:35 - HomePageHelper: wait until homePage is loaded
+2019-01-28 12:54:47 INFO  LogLog4j:36 - HomePageHelper: wait until loginButton is loaded
+2019-01-28 12:54:47 INFO  LogLog4j:38 - HomePageHelper: wait until createAccountButton is loaded
+2019-01-28 12:54:47 INFO  LogLog4j:40 - HomePageHelper: wait until goToEventButton is loaded
+2019-01-28 12:54:47 INFO  LogLog4j:62 - HomePageHelper: button Login was pressed
+2019-01-28 12:54:48 INFO  LogLog4j:150 - -------- Test notValidPassword was started--------
+2019-01-28 12:54:48 INFO  LogLog4j:151 - Parametr:email = jmenka@gmail.com
+2019-01-28 12:54:48 INFO  LogLog4j:152 - Parametr:password =  #$%
+2019-01-28 12:54:48 INFO  LogLog4j:43 - LoginPageHelper: wait until cancelButton is loaded
+2019-01-28 12:54:48 INFO  LogLog4j:44 - LoginPageHelper: Cancel button was loaded
+2019-01-28 12:54:48 INFO  LogLog4j:65 - LoginPageHelper: ---enter value password---
+2019-01-28 12:54:48 INFO  LogLog4j:66 - LoginPageHelper: was enetered password:  #$%
+2019-01-28 12:54:48 INFO  LogLog4j:56 - LoginPageHelper: ---enter value emeil---
+2019-01-28 12:54:48 INFO  LogLog4j:57 - LoginPageHelper: was eneterd email: jmenka@gmail.com
+2019-01-28 12:54:49 INFO  LogLog4j:93 - LoginPageHelper: wait until alert text Enter 6 characters is loaded
